@@ -1,0 +1,17 @@
+N = int(input())
+
+phoneBook = {}
+
+for i in range(0,N):
+    entry = str(input()).split(" ")
+    name = entry[0]
+    contact = entry[1]
+    phoneBook[name]=int(contact)
+
+for j in range(0,N):
+  name = str(input())
+  if name in phoneBook:
+    contact = phoneBook[name] 
+    print (name+ "=" + str(contact))
+  else:
+    print("Not found")
